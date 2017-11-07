@@ -1,17 +1,19 @@
  //database of characters
  var computerChoices = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+ //initialize variables
  var wins = 0;
  var losses = 0;
  var guessesLeft = 9;
+ //array where user inputs will be pushed
  var guessesList= [];
  
 
-// userGuess is what the user picks by pressing a key
 
-//to reset game function
+//to reset game function after win or loss
 function reWriteStats() {
    guessesLeft = 9;
    guessesList= [];
+   document.getElementById("guesses").textContent = "None";
    computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
 }
 var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
@@ -26,15 +28,15 @@ document.onkeyup = function(event) {
         //when user guess does not match computer generated guess-- change guessesleft,list values in real time
         if (userGuess != computerGuess) {
          for(i=0; i<guessesList.length;i++) { 
-         // if a character is repeated does not reduce  the guessesleft and prompts to try again
+         // if a character is repeated do not reduce  the guessesleft and prompts to try again
          if (userGuess === guessesList[i])
          {
          alert("You already entered this key, try a different key"); 
-         
+         //deletes repeated  character from previous position 
          guessesList.splice(i,1);
          guessesLeft+=1;
          console.log(guessesList);
-          console.log(guessesList[guessesList.length-1]);
+         console.log(guessesList[guessesList.length-1]);
          }
          }
          guessesLeft-=1;
