@@ -2,26 +2,46 @@
 	color: white;
 	font-size: 25px;
 }
-.container{
-	margin-left: 0px;
-	margin-right: 0px;
-	
+
+.navbar{
+	display:inline-block;
+	width: 100%;
+	text-align: center;
+	height: 20%;
 }
 
-#one,#two,#three,#four{
+body{
+	background-image: url("../Images/2.jpg");
+}
+
+#one,#two,#three,#four {
 	float: left;
-	margin:80px;
+	margin:100px;
+	margin-top: 10px;
+	width:50%;
+}
+.card {
+    min-height: 140px;
 }
 
 #head1{
+	display: block;
 	text-align: center;
-	padding-bottom: 30px;
+	padding-bottom: 25px;
 	font-size: 20px;
+    width: 100%;
 }
+
 .card-title{
 	text-align: center;
 }
 
-#head2{
+#footer{
 	text-align: center;
+    color:white;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	height: 5%;
+	display: block;
+	background-color: #777777;
 }

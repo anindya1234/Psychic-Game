@@ -11,52 +11,73 @@
   <link rel="stylesheet" href="assets/css/reset.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   <link rel="stylesheet" href="Assets/CSS/style.css">
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
 
   <!-- Create title with a navbar  -->
-<nav id =" head2" class="navbar navbar-dark bg-primary">
+
+
+
+<nav class="navbar navbar-dark bg-primary">
   <div class="header"> PSYCHIC GAME</div>
 </nav>
-<div class="container">
-<!-- // Create purpose text //Create wins , losses , guesses left, Your guesses so far:  -->
-<div id= "head1" class="alert alert-primary" role="alert">
-  <br><strong>Enter a letter and see if you can match what computer thinks...</strong>
-</div>
 
-<div id="one" class="card text-white bg-success mb-3" style="max-width: 20rem;">
-  <div class="card-header">Wins</div>
-  <div class="card-body">
-    <h4 class="card-title"><div id="wins"> 0 </div></h4>
-      </div>
-</div>
+<!-- // Create purpose text //Create wins , losses , guesses left, Your guesses so far:-->
+
+<div class ="wrap">
+ <div class="container">
+   <div class="row">
+   <div class="col-md-12">
+   <div id="head1">  <br><strong>Enter a letter and see if you can match what computer thinks...</strong> </div>
+   </div>
+   </div> 
+
+
+<div class="row">
+  <div class="col-md-6">
+    <div id="one" class="card text-white bg-success mb-3" style="max-width: 20rem;">
+     <div class="card-header">Wins</div>
+     <div class="card-body">
+     <h4 class="card-title"><div id="wins"> 0 </div></h4>
+     </div>
+    </div>
+  </div>
 
     
-<div id="two" class="card text-white bg-danger mb-3" style="max-width: 20rem;">
-  <div class="card-header">Losses</div>
-  <div class="card-body">
+  <div class="col-md-6">
+   <div id="two" class="card text-white bg-danger mb-3" style="max-width: 20rem;">
+   <div class="card-header">Losses</div>
+    <div class="card-body">
     <h4 class="card-title"><div id="losses"> 0 </div></h4>
     </div>
+   </div>
+  </div>
 </div>
-     
-<div id="three" class="card text-white bg-primary mb-3" style="max-width: 20rem;">
-  <div class="card-header">Guesses Left</div>
-  <div class="card-body">
-    <h4 class="card-title"><div id="guessesLeft"> 9 </div></h4>
+
+<div class="row">
+  <div class="col-md-6">     
+    <div id="three" class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+    <div class="card-header">Guesses Left</div>
+    <div class="card-body">
+      <h4 class="card-title"><div id="guessesLeft"> 9 </div></h4>
     </div>
-</div>
-
-<div id="four" class="card text-white bg-info mb-3" style="max-width: 20rem;">
-  <div class="card-header">Guesses so far</div>
-  <div class="card-body">
-    <h4 class="card-title"><div id="guesses"> None </div></h4>
     </div>
-</div>
+  </div>
 
+  <div class="col-md-6">
+    <div id="four" class="card text-white bg-info mb-3" style="max-width: 20rem;">
+    <div class="card-header">Guesses so far</div>
+    <div class="card-body">
+      <h4 class="card-title"><div id="guesses">  </div></h4>
+    </div>
+    </div>
+  </div>
 </div>
-
+</div>
+<div id ="footer" class="fixed-bottom">Created by Anindya</div>
+</div>
 <script type="text/javascript" src="Assets/JS/game.js"></script>
 </body>
 
