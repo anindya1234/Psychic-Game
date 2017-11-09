@@ -1,6 +1,6 @@
 .header{
 	color: white;
-	font-size: 25px;
+	font-size: 30px;
 }
 
 .navbar{
@@ -15,11 +15,12 @@ body{
 }
 
 #one,#two,#three,#four {
-	float: left;
-	margin:100px;
+	
+	margin:120px;
 	margin-top: 10px;
 	width:50%;
 }
+
 .card {
     min-height: 140px;
 }
@@ -27,9 +28,10 @@ body{
 #head1{
 	display: block;
 	text-align: center;
-	padding-bottom: 25px;
-	font-size: 20px;
+	padding-bottom: 15px;
+	font-size: 30px;
     width: 100%;
+    color: #777777;
 }
 
 .card-title{
@@ -44,4 +46,66 @@ body{
 	height: 5%;
 	display: block;
 	background-color: #777777;
+	position: fixed; 
+    bottom: 0;
+    
+
+}
+@media only screen and (max-width: 767px) {
+
+
+#footer{
+	text-align: center;
+    color:white;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	height: 5%;
+	display: block;
+	background-color: #777777;
+	position: relative; 
+    bottom: 0;
+    
+
+}
+.header{
+	font-size: 25px;
+}
+
+#head1{
+	
+	font-size: 20px;
+    }
+
+
+
+}
+@media only screen and (max-width: 420px) {
+
+
+#footer{
+	text-align: center;
+    color:white;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	height: 5%;
+	display: block;
+	background-color: #777777;
+	position: relative; 
+    bottom: 0;
+    
+
+}
+.header{
+	font-size: 25px;
+}
+
+#head1{
+	
+	font-size: 20px;
+    }
+
+.col-md-6{
+	margin-left: -50px;
+}
+
 }
